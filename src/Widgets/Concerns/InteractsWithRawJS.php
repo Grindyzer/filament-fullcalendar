@@ -61,4 +61,32 @@ trait InteractsWithRawJS
             null
         JS;
     }
+
+    /**
+     * Triggered when the user mouses over an event. Similar to the native mouseenter.
+     *
+     * @see https://fullcalendar.io/docs/eventMouseEnter
+     *
+     * @return string
+     */
+    public function eventMouseEnter(): string
+    {
+        return <<<JS
+            null
+        JS;
+    }
+
+    /**
+     * Triggered when the user mouses out of an event. Similar to the native mouseleave.
+     *
+     * @see https://fullcalendar.io/docs/eventMouseLeave
+     *
+     * @return string
+     */
+    public function eventMouseLeave(): string
+    {
+        return <<<JS
+            null
+        JS;
+    }
 }

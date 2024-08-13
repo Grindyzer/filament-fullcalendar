@@ -500,6 +500,35 @@ public function eventDidMount(): string
 
 The JavaScript code returned by `eventDidMount()` will be added to [the FullCalendar's `eventDidMount` event render hook](https://fullcalendar.io/docs/event-render-hooks).
 
+## Event Mouse Enter and Mouse Leave
+
+You can add some custom behavior when the user hovers over the event via JavaScript on the `eventMouseEnter` and `eventMouseLeave` methods:
+
+```php
+public function eventMouseEnter(): string
+{
+    return <<<JS
+        function({ event, el, jsEvent, view }){
+            // Write your custom implementation here
+            // Will be triggered when the user hovers over the event
+        }
+    JS;
+}
+
+public function eventMouseLeave(): string
+{
+    return <<<JS
+        function({ event, el, jsEvent, view }){
+            // Write your custom implementation here
+            // Will be triggered when the user leaves the event
+        }
+    JS;
+}
+```
+
+The JavaScript code returned by `eventMouseEnter()` and `eventMouseLeave()` will be added to [the FullCalendar's `eventMouseEnter` and `eventMouseLeave` event hovering hook](https://fullcalendar.io/docs/event-clicking-hovering).
+
+
 ## Adding the widget to a Blade view
 
 Follow the [Filament Docs](https://filamentphp.com/docs/3.x/widgets/adding-a-widget-to-a-blade-view) to know how to add the widget to a Blade view.
