@@ -23,6 +23,8 @@
                 eventContent: {!! htmlspecialchars($this->eventContent(), ENT_COMPAT) !!},
                 eventDidMount: {!! htmlspecialchars($this->eventDidMount(), ENT_COMPAT) !!},
                 eventWillUnmount: {!! htmlspecialchars($this->eventWillUnmount(), ENT_COMPAT) !!},
+                eventMouseEnter: {!! htmlspecialchars($this->eventMouseEnter(), ENT_COMPAT) !!},
+                eventMouseLeave: {!! htmlspecialchars($this->eventMouseLeave(), ENT_COMPAT) !!},
             })">
         </div>
     </x-filament::section>
