@@ -35,6 +35,7 @@
                 eventWillUnmount: {!! htmlspecialchars($this->eventWillUnmount(), ENT_COMPAT) !!},
                 eventMouseEnter: {!! htmlspecialchars($this->eventMouseEnter(), ENT_COMPAT) !!},
                 eventMouseLeave: {!! htmlspecialchars($this->eventMouseLeave(), ENT_COMPAT) !!},
+                dayCellDidMount: {!! htmlspecialchars($this->dayCellDidMount(), ENT_COMPAT) !!},
             })">
         </div>
     </x-filament::section>

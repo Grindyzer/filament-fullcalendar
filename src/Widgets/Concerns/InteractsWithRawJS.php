@@ -89,4 +89,16 @@ trait InteractsWithRawJS
             null
         JS;
     }
+
+    /**
+     * Customize the day cells in daygrid and timegrid views.
+     *
+     * @see https://fullcalendar.io/docs/day-cell-render-hooks
+     */
+    public function dayCellDidMount(): string
+    {
+        return <<<'JS'
+            null
+        JS;
+    }
 }
